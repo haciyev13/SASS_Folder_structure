@@ -1,0 +1,28 @@
+.container{
+    margin: 0;
+    padding: 0;
+    h1{
+        color: $text-color-purple;
+    }
+    p{
+        color: $text-color-black;
+    }
+    span{
+       color: $text-color-green;
+    }
+}
+.content{
+    @include flexBox( wrap, row, center,space-between);
+    .box{
+        width: 4rem;
+        height: 4rem;
+        background-color: map-get($buttons, 'btn-success');
+        margin: 1rem;
+    }
+}
+
+@include md {
+    .content{
+        background-color: map-get($buttons, 'btn-primary');
+    }
+}

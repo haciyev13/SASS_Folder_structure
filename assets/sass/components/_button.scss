@@ -1,0 +1,19 @@
+button.btn {
+  border: none;
+  outline: none;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  background-color: map-get($buttons, "btn-secondary");
+  &:hover {
+    cursor: help;
+  }
+}
+.btn.btn-danger {
+  background-color: map-get($buttons, "btn-danger");
+  color: map-get($buttons, "--text-color-white");
+  &:hover {
+    background-color: map-get($buttons, "btn-success");
+    transition: all 0.7s ease-in-out;
+    color: map-get($buttons, "--text-color-black");
+  }
+}

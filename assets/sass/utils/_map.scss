@@ -1,0 +1,14 @@
+$buttons:(
+    'btn': #f40f6b,
+    'btn-primary': #0b6a77,
+    'btn-secondary': #65770b,
+    'btn-success': #0ca031,
+    'btn-danger': #710202,
+    '--text-color-white': #fff,
+    '--text-color-black': #000,
+);
+
+$breakpoint: (
+    'sm': 576px,
+    'md': 768px,
+)

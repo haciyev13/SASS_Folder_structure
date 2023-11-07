@@ -1,0 +1,13 @@
+@mixin flexBox($direction,$wrapping,$horizontal,$vertical){
+    display: flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+    flex-direction: $direction;
+    flex-wrap: $wrapping;
+}
+
+@mixin md{
+    @media (max-width: map-get($breakpoint, 'md')) {
+        @content
+    }
+}
